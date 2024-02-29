@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-label{
+  @apply uppercase text-xs poppins-bold tracking-[0.2rem] text-Smokeygrey;
+}
+.input{
+  @apply w-28 py-2 px-4 border border-gray-400 rounded outline-none poppins-bold text-2xl
+}
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+ 
