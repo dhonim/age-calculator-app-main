@@ -19,8 +19,8 @@
   </style>
 </head>
 <body class="h-screen bg-Lightgrey">
-<main class="bg-white max-w-2xl mx-auto mt-20 rounded-lg p-10">
- <div class="flex items-center space-x-6">
+<main class="bg-white max-w-2xl mx-auto mt-20 rounded-lg p-10 relative rounded-br-[120px]">
+ <div class="flex items-center space-x-6 mb-9">
   <div class="flex flex-col space-y-1">
     <label for="day" class="input-label">Day</label>
     <input type="text"
@@ -46,23 +46,21 @@
      placeholder="YYYY">
   </div>
  </div>
+
+ <div class="h-0.5 bg-Lightgrey mb-10">
+   <button class="w-16 h-16 bg-Purple rounded-full flex items-center justify-center absolute right-8 bottom-0 top-28">
+    <img src="./assets/images/icon-arrow.svg" width="40" alt="icon-arrow">
+   </button>
+ </div>
+ <ul class="text-7xl space-y-2 poppins-extrabold-italic">
+   <li><span class="text-Purple">--</span> years</li>
+   <li><span class="text-Purple">--</span> months</li>
+   <li><span class="text-Purple">--</span> days</li>
+ </ul>
 </main>
-  
-  
-
-  
-  
-
-  
-  
-
-  -- years
-  -- months
-  -- days
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Sanjeev U</a>.
   </div>
 </body>
 </html>
