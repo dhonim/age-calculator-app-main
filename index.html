@@ -19,40 +19,49 @@
   </style>
 </head>
 <body class="h-screen bg-Lightgrey">
-<main class="bg-white max-w-2xl mx-auto mt-20 rounded-lg p-10 relative rounded-br-[120px]">
- <div class="flex items-center space-x-6 mb-9">
-  <div class="flex flex-col space-y-1">
-    <label for="day" class="input-label">Day</label>
-    <input type="text"
-     id="day"
-     name="day"
-     class="input"
-     placeholder="DD">
-  </div>
-  <div class="flex flex-col space-y-1">
-    <label for="month" class="input-label">Month</label>
-    <input type="text"
-     id="month"
-     name="month"
-     class="input"
-     placeholder="MM">
-  </div>
-  <div class="flex flex-col space-y-1">
-    <label for="year" class="input-label">Year</label>
-    <input type="text"
-     id="year"
-     name="year"
-     class="input"
-     placeholder="YYYY">
-  </div>
- </div>
+<main class="bg-white max-w-2xl mx-auto mt-20 rounded-lg p-10 rounded-br-[120px]">
+ <form>
+   <div class="flex space-x-6">
+    <div class="flex flex-col space-y-1">
+      <label for="day" class="input-label">Day</label>
+      <input type="text"
+       id="day"
+       name="day"
+       class="input"
+       placeholder="DD" >
+       <small class="text-red-600 italic hidden">This field is required</small>
+       <small class="text-red-600 italic hidden">Must be a valid day</small>
+    </div>
+    <div class="flex flex-col space-y-1">
+      <label for="month" class="input-label">Month</label>
+      <input type="text"
+       id="month"
+       name="month"
+       class="input"
+       placeholder="MM">
+       <small class="text-red-600 italic hidden">This field is required</small>
+       <small class="text-red-600 italic hidden">Must be a valid month</small>
+    </div>
+    <div class="flex flex-col space-y-1">
+      <label for="year" class="input-label">Year</label>
+      <input type="text"
+       id="year"
+       name="year"
+       class="input"
+       placeholder="YYYY">
+       <small class="text-red-600 italic hidden">This field is required</small>
+       <small class="text-red-600 italic hidden">Must be a valid year</small>
+    </div>
+   </div>
+   <button class="h-0.5 w-full bg-Lightgrey my-10 cursor-pointer relative">
+    <div class="w-16 h-16 bg-Purple rounded-full flex items-center justify-center absolute top-0 right-0 bottom-3">
+     <img src="./assets/images/icon-arrow.svg" width="40" alt="icon-arrow">
+    </div>
+  </button>
+ </form>
 
- <div class="h-0.5 bg-Lightgrey mb-10">
-   <button class="w-16 h-16 bg-Purple rounded-full flex items-center justify-center absolute right-8 bottom-0 top-28">
-    <img src="./assets/images/icon-arrow.svg" width="40" alt="icon-arrow">
-   </button>
- </div>
- <ul class="text-7xl space-y-2 poppins-extrabold-italic">
+
+ <ul class="text-7xl space-y-2 poppins-extrabold-italic select-none">
    <li><span class="text-Purple">--</span> years</li>
    <li><span class="text-Purple">--</span> months</li>
    <li><span class="text-Purple">--</span> days</li>
