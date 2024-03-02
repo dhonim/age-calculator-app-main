@@ -23,34 +23,35 @@
  <form>
    <div class="flex space-x-6">
     <div class="flex flex-col space-y-1">
-      <label for="day" class="input-label">Day</label>
+      <label for="day" class="input-label errLabel">Day</label>
       <input type="text"
        id="day"
        name="day"
        class="input"
-       placeholder="DD" >
-       <small class="text-red-600 italic hidden">This field is required</small>
-       <small class="text-red-600 italic hidden">Must be a valid day</small>
+       placeholder="DD"
+       >
+       <small class="text-red-600 italic hidden errMsg">This field is required</small>
+       <small class="text-red-600 italic hidden invalid">Must be a valid day</small>
     </div>
     <div class="flex flex-col space-y-1">
-      <label for="month" class="input-label">Month</label>
+      <label for="month" class="input-label errLabel">Month</label>
       <input type="text"
        id="month"
        name="month"
        class="input"
        placeholder="MM">
-       <small class="text-red-600 italic hidden">This field is required</small>
-       <small class="text-red-600 italic hidden">Must be a valid month</small>
+       <small class="text-red-600 italic hidden errMsg">This field is required</small>
+       <small class="text-red-600 italic hidden invalid">Must be a valid month</small>
     </div>
     <div class="flex flex-col space-y-1">
-      <label for="year" class="input-label">Year</label>
+      <label for="year" class="input-label errLabel">Year</label>
       <input type="text"
        id="year"
        name="year"
        class="input"
        placeholder="YYYY">
-       <small class="text-red-600 italic hidden">This field is required</small>
-       <small class="text-red-600 italic hidden">Must be a valid year</small>
+       <small class="text-red-600 italic hidden errMsg" id="errMsg">This field is required</small>
+       <small class="text-red-600 italic hidden invalid">Must be a valid year</small>
     </div>
    </div>
    <button class="h-0.5 w-full bg-Lightgrey my-10 cursor-pointer relative">
@@ -71,5 +72,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Sanjeev U</a>.
   </div>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
